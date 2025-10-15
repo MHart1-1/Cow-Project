@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="header">
+        Cow
+    </div>
+
+    <template id="cardTemplate">
+        <div class="card">
+            <h1><span data-field="name"></span></h1>
+            <h2>Age: <span data-field="age"></span></h2>
+            <h2><span data-field="type"></span></h2>
+            <h4><span data-field="description"></span></h4>
+            <button class="buyButton">BUY COW</button>
+        </div>
+    </template>
+    
+    <div id="container"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
