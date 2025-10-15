@@ -1,3 +1,5 @@
+let currentId = 1;
+
 const els = {
     list: document.getElementById("container"),
     template: document.getElementById("cardTemplate")
@@ -5,7 +7,7 @@ const els = {
 
 init().catch(err => {
     console.error(err);
-    els.list.textContent = "Could not load cows"
+    els.list.textContent = err;
 })
 
 async function init() {
@@ -33,6 +35,12 @@ function renderCows(cows)
         setText(node, "type", c.type)
         setText(node, "description", c.description)
 
+        const btn = document.createElement("button")
+        btn.id = currentId
+        currentId++
+        btn.addEventListener("click", buyCow());
+        node.appendChild(btn);
+
         els.list.appendChild(node);
     }
 }
@@ -41,4 +49,9 @@ function setText(root, field, value)
 {
     const el = root.querySelector(`[data-field="${field}"]`);
     if(el) el.textContent = value ?? "-"
+}
+
+function buyCow()
+{
+    
 }

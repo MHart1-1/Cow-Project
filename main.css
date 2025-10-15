@@ -6,7 +6,7 @@ body {
 
 .card {
     width: 25em;
-    height: 18em;
+    height: 20em;
     border-radius: 10px;
     border: 2px solid black;
     background-color: #E30B5D;
@@ -38,16 +38,17 @@ body {
 }
 
 button {
-    width: 45%;
-    height: 30px;
-    border-radius: 10px;
-    border: 2px solid black;
-    background-color:#f8488b;
-    color: white;
-    font-size: large;
-    display: block;
-    margin: 0 auto;
-    transition: background-color 0.2s, transform 0.5s ease;
+  width: 70%; /* fill card width */
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: #f8488b;
+  color: white;
+  margin-left: 15%;
+  margin-bottom: 5px;
+  font-size: large;
+  transition: background-color 0.2s, transform 0.5s ease;
+  cursor: pointer;
 }
 
 
