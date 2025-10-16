@@ -10,6 +10,8 @@ init().catch(err => {
     els.list.textContent = err;
 })
 
+let buyingCowId;
+
 async function init() {
     const res = await fetch("cows.json")
 
@@ -38,7 +40,10 @@ function renderCows(cows)
         const btn = document.createElement("button")
         btn.id = currentId
         currentId++
-        btn.addEventListener("click", buyCow());
+        btn.className = "cowButton"
+        btn.textContent = "BUY COW"
+        btn.onclick = () => buyCow(btn.id);
+        btn.style.fontSize = "x-large"
         node.appendChild(btn);
 
         els.list.appendChild(node);
@@ -51,7 +56,35 @@ function setText(root, field, value)
     if(el) el.textContent = value ?? "-"
 }
 
-function buyCow()
+function buyCow(id)
 {
-    
+    buyingCowId = id
+    let popup = document.getElementById("confirmPurchase")
+
+    popup.style.display = "block"
+
+    console.log(buyingCowId)
+}
+
+function hidePopup()
+{
+    let popup = document.getElementById("confirmPurchase")
+    popup.style.display = "none"
+}
+
+function yes()
+{
+    buyCowConfirmed(buyingCowId)
+    document.getElementById("confirmPurchase").style.display = "none"
+}
+
+function buyCowConfirmed(id)
+{
+    let button = document.getElementById(id)
+
+    button.textContent = "Purchased Cow!!!"
+    button.id = "purchased"
+    button.disabled = true;
+
+    console.log(button.disabled)
 }

@@ -1,48 +1,56 @@
 {
   "cows": [
     {
+      "id": 1,
       "name": "Eleanor",
       "age": 14,
       "type": "Rust Highland",
-      "description": "Eleanor is a calm, gentle Highland cow with a rich rust-colored coat. She enjoys quiet mornings grazing on misty hillsides and is often the first to greet visitors with curiosity."
+      "description": "Eleanor is a calm, gentle Highland cow with a rich rust-colored coat. She enjoys quiet mornings grazing on misty hillsides and is often the first to greet visitors."
     },
     {
+      "id": 2,
       "name": "Oliver",
       "age": 8,
       "type": "Silver Highland",
       "description": "Oliver’s long silver-blonde fur makes him look like he’s glowing in the morning fog. Playful and social, he’s known for following the farmer around the pasture."
     },
     {
+      "id": 3,
       "name": "Margaret",
       "age": 21,
       "type": "Chestnut Highland",
       "description": "Margaret has deep chestnut fur and a wise, steady gaze. She’s the matriarch of her herd, guiding younger cows with patience and an unspoken authority."
     },
     {
+      "id": 4,
       "name": "Caleb",
       "age": 5,
       "type": "Golden Highland",
       "description": "Caleb is a spirited young Highland cow with a soft golden coat and endless energy. He’s always trotting around, chasing birds or splashing through puddles after the rain."
     },
     {
+      "id": 5,
       "name": "Rosalind",
       "age": 26,
       "type": "Mahogany Highland",
       "description": "Rosalind is one of the oldest cows in the meadow. Her deep mahogany fur has faded slightly with age, but she carries herself with grace and wisdom."
     },
     {
+      "id": 6,
       "name": "Duncan",
       "age": 11,
       "type": "Amber Highland",
       "description": "Duncan’s reddish-amber coat glows like fire at sunset. He’s brave, dependable, and always keeps a close eye on the herd when storms roll over the mountains."
     },
     {
+      "id": 7,
       "name": "Clara",
       "age": 3,
       "type": "Curly Highland",
       "description": "Clara is a young, curly-furred Highland cow with a mischievous streak. She loves exploring beyond the fence and has a knack for finding the tastiest clumps of grass."
     },
     {
+      "id": 8,
       "name": "Simon",
       "age": 19,
       "type": "Ash Highland",
